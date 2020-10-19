@@ -41,7 +41,7 @@ $(function() {
         if ($(this).scrollTop() > 100) {
             if (showFlag == false) {
                 showFlag = true;
-                topBtn.stop().animate({'bottom' : '30px'}, 200); 
+                topBtn.stop().animate({'bottom' : '40px'}, 200); 
             }
         } else {
             if (showFlag) {
@@ -98,28 +98,6 @@ $(function() {
     var height = 140;
    }
 
-   $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      || location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        var parent = $(this).parent();
-        $('.sp_menu').hide();
-        $('.menu_bar').removeClass('is_active');
-        $('.logo').show();
-        if (parent.hasClass("company_overview")) {
-          $('html, body').animate({
-          scrollTop: target.offset().top - height }, 1000);
-        } 
-        else {
-          $('html, body').animate({
-          scrollTop: target.offset().top - 70 }, 1000);
-        }
-        return false;
-      }
-      }
-      });
       $(window).load(function(){
       function goToByScroll(id){
       $("html, body").animate({scrollTop: $("#"+id).offset().top - 70 }, 1000);

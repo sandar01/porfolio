@@ -8,7 +8,7 @@ body {
 	line-height: 150%;
 	background: #fff;
 	/*overflow-x: hidden;*/
-	font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	    font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
 }
 a {
 	color: #757575;
@@ -343,6 +343,9 @@ li.has_child:hover .sub_menu {
 #skills  .wordpress::before{
     width: 70%;
 }
+#skills  .java::before{
+    width: 50%;
+}
 
 
 /*======scroll======*/
@@ -413,6 +416,7 @@ li.has_child:hover .sub_menu {
 	padding: 93px 0 0 0;
 	margin: 0;
 	position: relative;
+	line-height: 1.6;
 }
 .top_sec01 {
 	padding: 0;
